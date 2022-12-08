@@ -6,10 +6,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta
-            name="description"
-            content="Premier Sydney big band."
-        />
+        <meta name="description" content="Premier Sydney big band." />
         <meta name="author" content="Devcrud" />
         <title>Dr V's Swing Thing</title>
         <!-- font icons -->
@@ -22,8 +19,7 @@
         <link rel="stylesheet" href="assets/css/dorang.css" />
 
         <link rel="icon" href="assets/imgs/silhouette.jpg" />
-
-        
+        <script src="assets/js/check.js"></script>
     </head>
     <body
         data-spy="scroll"
@@ -54,27 +50,49 @@
         </nav>
         <!-- end of page navbar -->
 
-
         <!-- page container -->
-        <div class="container page-container" id="about" style="min-height: 75%;">
+        <div
+            class="container page-container"
+            id="about"
+            style="min-height: 75%"
+        >
             <br />
             <br />
             <br />
             <br />
             <br />
-            <div class="col-md-10 col-lg-8 m-auto" style="min-height: 100%;">
+            <div class="col-md-10 col-lg-8 m-auto" style="min-height: 100%">
                 <h6 class="title mb-4">Contact Us</h6>
-                <p class="mb-5">
-                    Email:
-                    <a href="mailto: todo@sydgram.nsw.edu.au"
-                        >todo@sydgram.nsw.edu.au</a
-                    >
+                <p class="mb-5" style="text-align: center">
+                    For all bookings and enquiries, contact Benjamin Fisher.
+                    <br /><br />
+
+                    <span id="details" style="display: none">
+                        <br />
+
+                        Email: <span id="email">test@gmail.com</span>
+                        <br /><br />
+
+                        Phone: <span id="phone">314 159 2654</span>
+                    </span>
                 </p>
+
+                <form
+                    id="checkform"
+                    onsubmit="event.preventDefault(); onSubmit()"
+                >
+                    <div id="special" style="display: none">
+                        Name: <input type="text" required id="dont" value="123"/>
+
+                        <button onclick="event.preventDefault(); trigger()">Trigger</button>
+                    </div>
+                    <div id="actual">
+                        <button style="padding: 6px 6px 6px 6px;">Verify Human</button>
+                    </div>
+                </form>
             </div>
         </div>
         <!-- end of page container -->
-
-        
 
         <!--footer & pre footer -->
         <div class="contact-section" id="contact">
