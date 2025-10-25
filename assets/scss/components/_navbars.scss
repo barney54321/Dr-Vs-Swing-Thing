@@ -97,12 +97,20 @@
 	}
 
 	&.affix {
-		background: $dark-theme-color;
+		background: rgba($dark-slate, 0.95);
 		height: 70px;
-		border-bottom: 1px solid rgba($gray-500, .1);
+		border-bottom: 2px solid $gold;
+		box-shadow: 0 4px 12px rgba($navy, 0.2);
 
 		.nav-link {
 			color: $white;
+			font-size: 13px !important;
+
+			&:hover {
+				color: $gold;
+				border-bottom: 2px solid $gold;
+				padding-bottom: 8px;
+			}
 		}
 	}
 }

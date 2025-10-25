@@ -28,16 +28,23 @@ $grays: map-merge((
   "900": $gray-900
 ), $grays);
 
-$blue:    #007bff;
-$indigo:  #6610f2;
-$purple:  #6f42c1;
-$pink:    #e83e8c;
-$red:     #dc3545;
-$orange:  #fd7e14;
-$yellow:  #ffc107;
-$green:   #28a745;
-$teal:    #20c997;
-$cyan:    #17a2b8;
+// Professional color palette - deep navy and gold
+$navy:    #1a3a52;
+$gold:    #d4af37;
+$light-gold: #e8c547;
+$cream:   #f5f3f0;
+$dark-slate: #0f1419;
+
+$blue:    $navy;
+$indigo:  $navy;
+$purple:  $navy;
+$pink:    $gold;
+$red:     #d9534f;
+$orange:  #e8935c;
+$yellow:  $light-gold;
+$green:   #3c7c59;
+$teal:    $navy;
+$cyan:    #5c9ead;
 
 $colors: ();
 $colors: map-merge((
@@ -56,8 +63,8 @@ $colors: map-merge((
   "gray-dark":  $gray-800
 ), $colors);
 
-$primary:       $blue;
-$secondary:     $gray-600;
+$primary:       $navy;
+$secondary:     $gold;
 $success:       $green;
 $info:          $cyan;
 $warning:       $yellow;
@@ -80,8 +87,8 @@ $theme-colors: map-merge((
 
 
 // theme colors
-$dark-theme-color: $gray-900;
-$light-theme-color: $white;
+$dark-theme-color: $dark-slate;
+$light-theme-color: $cream;
 
 
 

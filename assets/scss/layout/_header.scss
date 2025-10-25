@@ -17,7 +17,7 @@
         top: 0;
         height: 100%;
         width: 100%;
-        background-image: radial-gradient(140% 110% at 48% 42%,rgba($dark-theme-color, .50),rgba($dark-theme-color, .60),rgba($dark-theme-color, .70),rgba($dark-theme-color, .80),rgba($dark-theme-color, .93),$dark-theme-color 55%,$dark-theme-color 200%,);
+        background: linear-gradient(135deg, rgba($navy, 0.85) 0%, rgba($dark-slate, 0.90) 50%, rgba($navy, 0.88) 100%);
     }
 
     .header-content {
@@ -41,31 +41,35 @@
         }
 
         .btn-theme-color {
-            padding: 8px 20px;
-            border-radius: 30px;
-            border: 2px solid $white;
-            color: $white;
+            padding: 12px 32px;
+            border-radius: 4px;
+            border: 2px solid $gold;
+            color: $gold;
             background: transparent;
             outline: 0;
             @include transition(all,.3s);
             font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
-            font-weight: bold;
-
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
 
             i {
                 position: relative;
                 top: 1px;
                 font-weight: bold;
+                margin-right: 8px;
             }
 
             &:hover {
-                background: rgba($white, .5);
-                border-color: rgba($white, .1);
-                color: $black;
+                background: $gold;
+                border-color: $gold;
+                color: $dark-slate;
+                transform: translateY(-2px);
+                box-shadow: 0 8px 20px rgba($gold, 0.3);
             }
 
             &:active {
-                background: rgba($white, 9)
+                transform: translateY(0);
             }
         }
     }

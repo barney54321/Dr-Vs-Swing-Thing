@@ -4,7 +4,14 @@
 	margin-bottom: 40px;
 	.card-img {
 		width: 100%;
-		border-radius: $card-border-radius;
+		border-radius: 6px;
+		box-shadow: 0 4px 15px rgba($navy, 0.2);
+		@include transition(all, .3s);
+
+		&:hover {
+			box-shadow: 0 8px 25px rgba($navy, 0.3);
+			transform: translateY(-4px);
+		}
 	}
 
 	.card-body {
@@ -43,7 +50,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: rgba($gray-800, .5);
+		background: rgba($navy, 0.65);
 		@include transition(all, 1s);
 	}
 	.des {
@@ -76,7 +83,7 @@
 	&:hover,
 	&:focus {
 		.overlay {
-			background: rgba($gray-900, .8);				
+			background: rgba($navy, 0.85);
 		}
 		.des {
 			top: 40%;

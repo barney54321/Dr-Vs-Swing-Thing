@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(sass:*)",
+      "Bash(python -c:*)",
+      "Bash(ls -lh \"C:\\Users\\andre\\OneDrive\\Documents\\My Programs\\Dr Vs Website\\v1\\assets\\imgs\"\" | grep -E \"header)",
+      "Bash(band \")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
